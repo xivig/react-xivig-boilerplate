@@ -26,8 +26,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
     const updateResolvedTheme = () => {
-      const isDark =
-        theme === 'dark' || (theme === 'system' && mediaQuery.matches);
+      const isDark = theme === 'dark' || (theme === 'system' && mediaQuery.matches);
       setResolvedTheme(isDark ? 'dark' : 'light');
 
       if (isDark) {
@@ -55,9 +54,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <ThemeContext.Provider
-      value={{ theme, setTheme: handleSetTheme, resolvedTheme }}
-    >
+    <ThemeContext.Provider value={{ theme, setTheme: handleSetTheme, resolvedTheme }}>
       {children}
     </ThemeContext.Provider>
   );

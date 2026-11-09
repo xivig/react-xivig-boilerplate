@@ -62,9 +62,7 @@ export function Modal({
               {title}
             </h2>
             {description && (
-              <p className="text-sm text-slate-500 dark:text-slate-400">
-                {description}
-              </p>
+              <p className="text-sm text-slate-500 dark:text-slate-400">{description}</p>
             )}
           </div>
           <Button

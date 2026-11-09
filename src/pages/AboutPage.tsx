@@ -33,7 +33,8 @@ export function AboutPage() {
           Architecture & Design Philosophy
         </h1>
         <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-          Why this boilerplate exists, what problems it eliminates, and how it serves as a foundation for production software.
+          Why this boilerplate exists, what problems it eliminates, and how it serves as a
+          foundation for production software.
         </p>
       </div>
 
@@ -66,7 +67,7 @@ export function AboutPage() {
         </CardHeader>
         <CardContent>
           <pre className="rounded-lg bg-slate-900 p-4 text-xs font-mono text-slate-100 overflow-x-auto leading-relaxed">
-{`react-xivig-boilerplate/
+            {`react-xivig-boilerplate/
 ├── .github/workflows/       # Automated CI Quality Gate (Node 20/22 matrix, lint, typecheck, test, build)
 ├── .vscode/                 # Workspace settings, recommended extensions, Tailwind IntelliSense
 ├── public/                  # Static assets (favicons, manifest, robots.txt)
@@ -99,17 +100,23 @@ export function AboutPage() {
         <Card className="p-6 space-y-2">
           <Cpu className="h-6 w-6 text-brand-600 dark:text-brand-400 mx-auto" />
           <h3 className="font-semibold text-base">Modern React 19</h3>
-          <p className="text-xs text-slate-500">Function components, modern hooks, concurrency ready</p>
+          <p className="text-xs text-slate-500">
+            Function components, modern hooks, concurrency ready
+          </p>
         </Card>
         <Card className="p-6 space-y-2">
           <FileCheck className="h-6 w-6 text-brand-600 dark:text-brand-400 mx-auto" />
           <h3 className="font-semibold text-base">Zero TypeScript Errors</h3>
-          <p className="text-xs text-slate-500">Strict mode enabled with zero implicit any</p>
+          <p className="text-xs text-slate-500">
+            Strict mode enabled with zero implicit any
+          </p>
         </Card>
         <Card className="p-6 space-y-2">
           <Code2 className="h-6 w-6 text-brand-600 dark:text-brand-400 mx-auto" />
           <h3 className="font-semibold text-base">Zero Bloat</h3>
-          <p className="text-xs text-slate-500">No deprecated jQuery, Bootstrap 4, or Webpack dependencies</p>
+          <p className="text-xs text-slate-500">
+            No deprecated jQuery, Bootstrap 4, or Webpack dependencies
+          </p>
         </Card>
       </div>
     </div>

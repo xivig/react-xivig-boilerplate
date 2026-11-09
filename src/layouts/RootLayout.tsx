@@ -19,7 +19,10 @@ export function RootLayout() {
       <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/80 backdrop-blur-md dark:border-slate-800/80 dark:bg-slate-950/80">
         <div className="container mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
           {/* Brand Logo */}
-          <NavLink to="/" className="flex items-center gap-2.5 font-bold tracking-tight text-lg">
+          <NavLink
+            to="/"
+            className="flex items-center gap-2.5 font-bold tracking-tight text-lg"
+          >
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-600 text-white shadow-sm shadow-brand-500/20">
               <Atom className="h-5 w-5 animate-[spin_10s_linear_infinite]" />
             </div>
@@ -55,7 +58,12 @@ export function RootLayout() {
               rel="noreferrer"
               className="hidden sm:inline-flex"
             >
-              <Button variant="ghost" size="sm" className="h-9 w-9 p-0" aria-label="GitHub Repository">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-9 w-9 p-0"
+                aria-label="GitHub Repository"
+              >
                 <Github className="h-4 w-4" />
               </Button>
             </a>
@@ -70,7 +78,11 @@ export function RootLayout() {
                 className="h-9 w-9 p-0"
                 aria-label="Toggle menu"
               >
-                {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+                {mobileMenuOpen ? (
+                  <X className="h-5 w-5" />
+                ) : (
+                  <Menu className="h-5 w-5" />
+                )}
               </Button>
             </div>
           </div>
@@ -118,7 +130,10 @@ export function RootLayout() {
       {/* Footer */}
       <footer className="border-t border-slate-200 bg-white py-8 text-center text-sm text-slate-500 dark:border-slate-800 dark:bg-slate-950 dark:text-slate-400">
         <div className="container mx-auto max-w-6xl px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© {new Date().getFullYear()} Xivig Boilerplate. Released under the MIT License.</p>
+          <p>
+            © {new Date().getFullYear()} Xivig Boilerplate. Released under the MIT
+            License.
+          </p>
           <div className="flex items-center gap-4 text-xs font-mono">
             <span>React 19</span>
             <span>•</span>

@@ -83,8 +83,8 @@ export function HomePage() {
         </h1>
 
         <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
-          Skip hours of repetitive setup. A fully modern, opinionated, and tested
-          starter kit built on React 19, TypeScript, Vite, Tailwind CSS, and Vitest.
+          Skip hours of repetitive setup. A fully modern, opinionated, and tested starter
+          kit built on React 19, TypeScript, Vite, Tailwind CSS, and Vitest.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
@@ -99,11 +99,7 @@ export function HomePage() {
               Architecture Guide
             </Button>
           </Link>
-          <Button
-            variant="secondary"
-            size="lg"
-            onClick={() => setModalOpen(true)}
-          >
+          <Button variant="secondary" size="lg" onClick={() => setModalOpen(true)}>
             Open Modal Demo
           </Button>
         </div>
@@ -121,8 +117,8 @@ export function HomePage() {
             </div>
             <CardTitle className="pt-2">Persistent Reactive State</CardTitle>
             <CardDescription>
-              This counter is synchronized with browser localStorage. Refresh the
-              page or toggle tabs and your count remains preserved!
+              This counter is synchronized with browser localStorage. Refresh the page or
+              toggle tabs and your count remains preserved!
             </CardDescription>
           </CardHeader>
           <CardContent className="text-center py-6">
@@ -162,12 +158,10 @@ export function HomePage() {
       {/* Feature Grid */}
       <section className="space-y-6">
         <div className="text-center space-y-2">
-          <h2 className="text-3xl font-bold tracking-tight">
-            Curated Best Practices
-          </h2>
+          <h2 className="text-3xl font-bold tracking-tight">Curated Best Practices</h2>
           <p className="text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
-            Everything you need to launch enterprise-grade web applications with
-            high maintainability and rock-solid DX.
+            Everything you need to launch enterprise-grade web applications with high
+            maintainability and rock-solid DX.
           </p>
         </div>
 
@@ -200,8 +194,8 @@ export function HomePage() {
       >
         <div className="space-y-4">
           <p className="text-sm text-slate-600 dark:text-slate-300">
-            This dialog features automatic backdrop clicks, escape key listening,
-            body scroll lock, and keyboard accessibility.
+            This dialog features automatic backdrop clicks, escape key listening, body
+            scroll lock, and keyboard accessibility.
           </p>
           <div className="rounded-lg bg-slate-100 p-3 text-xs font-mono dark:bg-slate-800">
             &lt;Modal isOpen=&#123;modalOpen&#125; onClose=&#123;close&#125;

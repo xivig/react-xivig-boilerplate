@@ -13,7 +13,15 @@ import { Input } from '@/components/ui/Input';
 import { Button } from '@/components/ui/Button';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { Badge } from '@/components/ui/Badge';
-import { Search, Mail, Phone, Globe, Building2, AlertCircle, RefreshCw } from 'lucide-react';
+import {
+  Search,
+  Mail,
+  Phone,
+  Globe,
+  Building2,
+  AlertCircle,
+  RefreshCw,
+} from 'lucide-react';
 
 export function UsersPage() {
   const { data: users, loading, error, refetch } = useFetch(fetchUsers);
@@ -40,7 +48,8 @@ export function UsersPage() {
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Live API Consumer</h1>
           <p className="text-slate-600 dark:text-slate-400">
-            Demonstrating custom `useFetch`, `useDebounce`, AbortController cancellation, and loading states.
+            Demonstrating custom `useFetch`, `useDebounce`, AbortController cancellation,
+            and loading states.
           </p>
         </div>
         <Button
@@ -130,7 +139,9 @@ export function UsersPage() {
                     </div>
                     <div>
                       <CardTitle className="text-base">{user.name}</CardTitle>
-                      <CardDescription className="text-xs">@{user.username}</CardDescription>
+                      <CardDescription className="text-xs">
+                        @{user.username}
+                      </CardDescription>
                     </div>
                   </div>
                   <Badge variant="secondary" className="text-[10px]">
