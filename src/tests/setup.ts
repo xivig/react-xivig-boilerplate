@@ -1,6 +1,6 @@
-import '@testing-library/jest-dom';
+import '@testing-library/jest-dom/vitest';
 
-// Polyfill window.matchMedia for jsdom
+// Polyfill window.matchMedia for happy-dom
 Object.defineProperty(window, 'matchMedia', {
   writable: true,
   value: (query: string) => ({
